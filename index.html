@@ -339,7 +339,7 @@
     /* divider */
     .divider { width: 64px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--fw-blue), var(--fw-cyan)); margin: 16px 0 32px; }
   </style>
-<!-- deploy: 1781859334 --></head>
+</head>
 <body>
 
 <!-- NAV -->
@@ -851,44 +851,122 @@
     <div class="section-tag">05 · Cronograma</div>
     <h2 class="section-title">Plan de trabajo – 20 semanas</h2>
     <div class="divider"></div>
-    <p class="section-desc">El proyecto se implementará en 20 semanas con 2 semanas de acompañamiento. El cronograma estimado podría cambiar al concluir la etapa de Planeación y Análisis.</p>
-    <table class="timeline-table">
-      <thead>
-        <tr>
-          <th>Fase</th>
-          <th>Módulo</th>
-          <th style="text-align:center;">Duración estimada</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td><span class="phase-badge ph-blue">Inicio</span></td><td>Planeación</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:20px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-blue">Análisis</span></td><td>Levantamiento de requerimientos</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:40px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-cyan">Diseño</span></td><td>Arquitectura y modelo de datos</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:40px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-cyan">Construcción</span></td><td>Sales, Service, Experience & Marketing Cloud</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:100px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-teal">Pruebas</span></td><td>Pruebas internas y UAT</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:60px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-teal">Capacitación</span></td><td>Formación de usuarios finales</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:30px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-teal">Entrega</span></td><td>Pase a producción</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:20px"></div></div></td></tr>
-        <tr><td><span class="phase-badge ph-blue">Hypercare</span></td><td>Acompañamiento post go-live</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:30px"></div></div></td></tr>
-      </tbody>
-    </table>
+    <p class="section-desc">El proyecto se implementará en 20 semanas con 2 semanas de Hypercare. El cronograma estimado podría cambiar al concluir la etapa de Planeación y Análisis.</p>
 
-    <div style="margin-top: 48px;">
-      <div class="section-tag">Cronograma Marketing Cloud</div>
-      <h3 style="font-size:20px; font-weight:700; color:var(--fw-navy); margin-bottom: 8px;">Marketing Cloud – 9 semanas</h3>
-      <p style="color:var(--fw-gray); font-size:14px; margin-bottom: 24px;">El proyecto de Marketing se implementará aproximadamente en 9 semanas con 1 semana de acompañamiento.</p>
-      <table class="timeline-table">
-        <thead><tr><th>Fase</th><th>Actividad</th><th style="text-align:center;">Duración</th></tr></thead>
-        <tbody>
-          <tr><td><span class="phase-badge ph-blue">Planeación y Análisis</span></td><td>Levantamiento y definición</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:30px"></div></div></td></tr>
-          <tr><td><span class="phase-badge ph-cyan">SIF</span></td><td>Strategic Impact Framework</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:20px"></div></div></td></tr>
-          <tr><td><span class="phase-badge ph-cyan">Construcción</span></td><td>Campañas, journeys, data extensions</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:60px"></div></div></td></tr>
-          <tr><td><span class="phase-badge ph-teal">Capacitación</span></td><td>Formación del equipo de marketing</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:20px"></div></div></td></tr>
-          <tr><td><span class="phase-badge ph-teal">Acompañamiento</span></td><td>Hypercare de marketing</td><td><div class="wk-bar"><div class="wk-dot"></div><div class="wk-line" style="width:20px"></div></div></td></tr>
-        </tbody>
+    <!-- GANTT CORE -->
+    <div style="overflow-x:auto; border-radius:14px; box-shadow:0 2px 20px rgba(0,0,0,.1); margin-bottom:56px;">
+      <table id="gantt-core" style="border-collapse:collapse; width:100%; min-width:760px; background:#fff; table-layout:fixed;">
+        <thead>
+          <tr style="background:#0A1F44; color:#fff;">
+            <th style="padding:12px 16px; text-align:left; font-size:13px; width:160px;">Fase</th>
+            <th style="padding:12px 8px; text-align:center; font-size:11px; width:44px; color:rgba(255,255,255,.7);">Dur.</th>
+            <th colspan="22" style="padding:12px; text-align:center; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.8);">Semanas del Proyecto</th>
+          </tr>
+          <tr id="gantt-core-weeks" style="background:#122040;"></tr>
+        </thead>
+        <tbody id="gantt-core-body"></tbody>
+      </table>
+    </div>
+
+    <!-- LEYENDA CORE -->
+    <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:56px;">
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#0A1F44;"></div>Planeación</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#0057B8;"></div>Análisis</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#1976D2;"></div>Diseño</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#0288D1;"></div>Construcción</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#00796B;"></div>Pruebas</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#E65100;"></div>Capacitación / Entrega</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444;"><div style="width:14px;height:14px;border-radius:3px;background:#546E7A;"></div>Hypercare</div>
+    </div>
+
+    <!-- GANTT MARKETING -->
+    <div class="section-tag">Cronograma Marketing Cloud</div>
+    <h3 style="font-size:20px; font-weight:700; color:var(--fw-navy); margin:8px 0 8px;">Marketing Cloud – 9 semanas</h3>
+    <p style="color:var(--fw-gray); font-size:14px; margin-bottom:24px;">Implementación en 9 semanas con 1 semana de acompañamiento.</p>
+
+    <div style="overflow-x:auto; border-radius:14px; box-shadow:0 2px 20px rgba(0,0,0,.1); margin-bottom:32px;">
+      <table id="gantt-mkt" style="border-collapse:collapse; width:100%; min-width:460px; background:#fff; table-layout:fixed;">
+        <thead>
+          <tr style="background:#0A1F44; color:#fff;">
+            <th style="padding:12px 16px; text-align:left; font-size:13px; width:200px;">Fase</th>
+            <th style="padding:12px 8px; text-align:center; font-size:11px; width:44px; color:rgba(255,255,255,.7);">Dur.</th>
+            <th colspan="10" style="padding:12px; text-align:center; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.8);">Semanas del Proyecto</th>
+          </tr>
+          <tr id="gantt-mkt-weeks" style="background:#122040;"></tr>
+        </thead>
+        <tbody id="gantt-mkt-body"></tbody>
       </table>
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var EMPTY = '#F0F4F8';
+  var ALT = '#FAFBFC';
+
+  function buildWeekHeaders(rowId, total) {
+    var row = document.getElementById(rowId);
+    if (!row) return;
+    var html = '<th style="padding:0;"></th><th style="padding:0;"></th>';
+    for (var i = 1; i <= total; i++) {
+      var op = i > total - 2 ? '.45' : '.65';
+      html += '<th style="padding:5px 2px; text-align:center; font-size:10px; font-weight:700; color:rgba(255,255,255,' + op + '); min-width:32px;">' + i + '</th>';
+    }
+    row.innerHTML = html;
+  }
+
+  function buildGanttBody(bodyId, phases, total) {
+    var body = document.getElementById(bodyId);
+    if (!body) return;
+    var html = '';
+    phases.forEach(function(p, idx) {
+      var bg = idx % 2 === 1 ? ALT : '#fff';
+      html += '<tr style="border-bottom:1px solid #E1E8F0; background:' + bg + ';">';
+      html += '<td style="padding:10px 16px; font-size:13px; font-weight:700; color:#0A1F44; white-space:nowrap;">' + p.name + '</td>';
+      html += '<td style="padding:10px 8px; text-align:center; font-size:12px; color:#6B7A8D; font-weight:600; white-space:nowrap;">' + p.dur + '</td>';
+      for (var w = 1; w <= total; w++) {
+        if (w >= p.start && w <= p.end) {
+          var radius = '';
+          if (w === p.start && w === p.end) radius = 'border-radius:6px;';
+          else if (w === p.start) radius = 'border-radius:6px 0 0 6px;';
+          else if (w === p.end) radius = 'border-radius:0 6px 6px 0;';
+          html += '<td style="padding:8px 2px;"><div style="background:' + p.color + '; height:24px; ' + radius + '"></div></td>';
+        } else {
+          html += '<td style="padding:8px 2px;"><div style="background:' + EMPTY + '; border-radius:4px; height:24px;"></div></td>';
+        }
+      }
+      html += '</tr>';
+    });
+    body.innerHTML = html;
+  }
+
+  var corePhases = [
+    { name: 'Planeación',       dur: '2 sem', start: 1,  end: 2,  color: '#0A1F44' },
+    { name: 'Análisis',         dur: '2 sem', start: 3,  end: 4,  color: '#0057B8' },
+    { name: 'Diseño',           dur: '2 sem', start: 5,  end: 6,  color: '#1976D2' },
+    { name: 'Construcción',     dur: '8 sem', start: 7,  end: 14, color: '#0288D1' },
+    { name: 'Pruebas Internas', dur: '2 sem', start: 15, end: 16, color: '#00796B' },
+    { name: 'Pruebas UAT',      dur: '2 sem', start: 17, end: 18, color: '#00897B' },
+    { name: 'Capacitación',     dur: '1 sem', start: 19, end: 19, color: '#E65100' },
+    { name: 'Entrega',          dur: '1 sem', start: 20, end: 20, color: '#BF360C' },
+    { name: 'Hypercare',        dur: '2 sem', start: 21, end: 22, color: '#546E7A' }
+  ];
+
+  var mktPhases = [
+    { name: 'Planeación y Análisis',   dur: '2 sem', start: 1, end: 2, color: '#0A1F44' },
+    { name: 'Strategic Impact (SIF)',  dur: '1 sem', start: 3, end: 3, color: '#0057B8' },
+    { name: 'Construcción',            dur: '5 sem', start: 4, end: 8, color: '#0288D1' },
+    { name: 'Capacitación',            dur: '1 sem', start: 9, end: 9, color: '#E65100' },
+    { name: 'Acompañamiento',          dur: '1 sem', start: 10, end: 10, color: '#546E7A' }
+  ];
+
+  buildWeekHeaders('gantt-core-weeks', 22);
+  buildGanttBody('gantt-core-body', corePhases, 22);
+  buildWeekHeaders('gantt-mkt-weeks', 10);
+  buildGanttBody('gantt-mkt-body', mktPhases, 10);
+})();
+</script>
 
 <!-- INVERSIÓN -->
 <section id="inversion">
