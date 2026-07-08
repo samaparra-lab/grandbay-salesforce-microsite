@@ -1234,26 +1234,34 @@
     <p class="section-desc">Cotización de licencias anuales por país para la operación regional de Grandbay. Precios en USD, sin impuestos.</p>
 
     <!-- CUADRO COMPARATIVO -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:40px;align-items:stretch;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px;align-items:stretch;">
 
       <!-- PRECIO INICIAL -->
       <div style="background:#fff;border:2px solid var(--fw-border);border-radius:16px;padding:28px;text-align:center;">
         <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--fw-gray);margin-bottom:14px;">Precio Inicial</div>
         <div style="font-size:32px;font-weight:900;color:var(--fw-gray);line-height:1;margin-bottom:6px;">183</div>
-        <div style="font-size:13px;color:var(--fw-gray);margin-bottom:16px;">licencias</div>
-        <div style="font-size:20px;font-weight:800;color:var(--fw-gray);text-decoration:line-through;">$63.82<span style="font-size:12px;font-weight:500;">/lic.</span></div>
-        <div style="font-size:13px;color:var(--fw-gray);margin-top:8px;">$140,148.72 / año</div>
+        <div style="font-size:13px;color:var(--fw-gray);margin-bottom:16px;">licencias · 3 países</div>
+        <div style="font-size:20px;font-weight:800;color:var(--fw-gray);text-decoration:line-through;">$63.82<span style="font-size:12px;font-weight:500;">/lic./mes</span></div>
+        <div style="font-size:13px;color:var(--fw-gray);margin-top:8px; line-height:1.8;">
+          183 × $63.82 × 12<br>
+          <strong style="font-size:15px;">$140,148.72 / año</strong>
+        </div>
       </div>
 
       <!-- FLECHA + DESCUENTO -->
       <div style="background:linear-gradient(135deg,var(--fw-blue),var(--fw-cyan));border-radius:16px;padding:28px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;">
         <div style="font-size:32px;">🎯</div>
         <div style="color:#fff;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;">Descuento Negociado</div>
-        <div style="color:#fff;font-size:38px;font-weight:900;line-height:1;">-5.98%</div>
-        <div style="color:rgba(255,255,255,.85);font-size:13px;">en precio unitario</div>
-        <div style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:10px 16px;margin-top:4px;">
-          <div style="color:#fff;font-size:11px;font-weight:700;">Ahorro con 259 lic.</div>
-          <div style="color:#fff;font-size:20px;font-weight:900;">$11,873 / año</div>
+        <div style="color:#fff;font-size:42px;font-weight:900;line-height:1;">-5.98%</div>
+        <div style="color:rgba(255,255,255,.85);font-size:12px;">$63.82 → $60.00 / lic.</div>
+        <div style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:10px 16px;margin-top:4px;width:100%;">
+          <div style="color:rgba(255,255,255,.8);font-size:10px;font-weight:700;margin-bottom:2px;">AHORRO EN PRECIO UNITARIO</div>
+          <div style="color:#fff;font-size:22px;font-weight:900;">$11,873 / año</div>
+          <div style="color:rgba(255,255,255,.7);font-size:10px;">259 lic × $3.82 × 12 meses</div>
+        </div>
+        <div style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:8px 12px;width:100%;">
+          <div style="color:#fff;font-size:11px;font-weight:800;">+76 licencias incluidas</div>
+          <div style="color:rgba(255,255,255,.7);font-size:10px;">vs. propuesta inicial (183)</div>
         </div>
       </div>
 
@@ -1261,11 +1269,27 @@
       <div style="background:linear-gradient(135deg,var(--fw-navy),#0D2E6E);border:2px solid var(--fw-cyan);border-radius:16px;padding:28px;text-align:center;">
         <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--fw-cyan);margin-bottom:14px;">Precio Negociado</div>
         <div style="font-size:32px;font-weight:900;color:#fff;line-height:1;margin-bottom:6px;">259</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.7);margin-bottom:16px;">licencias</div>
-        <div style="font-size:24px;font-weight:900;color:var(--fw-cyan);">$60.00<span style="font-size:13px;font-weight:500;">/lic.</span></div>
-        <div style="font-size:13px;color:rgba(255,255,255,.7);margin-top:8px;">$186,480.00 / año</div>
-        <div style="margin-top:12px;background:rgba(0,201,177,.15);border:1px solid rgba(0,201,177,.4);border-radius:8px;padding:8px 12px;">
-          <span style="color:#00C9B1;font-size:12px;font-weight:800;">+76 licencias incluidas</span>
+        <div style="font-size:13px;color:rgba(255,255,255,.7);margin-bottom:12px;">licencias · 4 países</div>
+        <div style="font-size:24px;font-weight:900;color:var(--fw-cyan);">$60.00<span style="font-size:13px;font-weight:500;">/lic./mes</span></div>
+        <div style="font-size:12px;color:rgba(255,255,255,.6);margin-top:6px;margin-bottom:14px;">259 × $60 × 12 = $186,480 / año</div>
+        <!-- Desglose por país -->
+        <div style="display:flex;flex-direction:column;gap:6px;text-align:left;">
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);border-radius:8px;padding:6px 10px;">
+            <span style="color:rgba(255,255,255,.85);font-size:12px;">🇨🇴 Colombia</span>
+            <span style="color:#fff;font-size:13px;font-weight:800;">100 lic.</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);border-radius:8px;padding:6px 10px;">
+            <span style="color:rgba(255,255,255,.85);font-size:12px;">🇬🇹 Guatemala</span>
+            <span style="color:#fff;font-size:13px;font-weight:800;">95 lic.</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);border-radius:8px;padding:6px 10px;">
+            <span style="color:rgba(255,255,255,.85);font-size:12px;">🇵🇦 Panamá</span>
+            <span style="color:#fff;font-size:13px;font-weight:800;">22 lic.</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(0,201,177,.15);border:1px solid rgba(0,201,177,.35);border-radius:8px;padding:6px 10px;">
+            <span style="color:rgba(255,255,255,.85);font-size:12px;">🇻🇪 Venezuela <span style="font-size:10px;color:#00C9B1;">NUEVO</span></span>
+            <span style="color:#00C9B1;font-size:13px;font-weight:800;">42 lic.</span>
+          </div>
         </div>
       </div>
 
