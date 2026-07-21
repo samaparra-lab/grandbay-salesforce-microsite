@@ -1699,13 +1699,264 @@
     <div id="lic-caricam" class="lic-tab" style="display:none;">
 
       <!-- ══ CARICAM ══ -->
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
         <div style="background:linear-gradient(135deg,var(--fw-navy),#0D2E6E);color:#fff;font-size:13px;font-weight:800;letter-spacing:1px;padding:8px 20px;border-radius:30px;">CARICAM</div>
-        <span style="font-size:12px;color:var(--fw-gray);">Inicio Enero · 117 usuarios · 7 meses</span>
+        <span style="font-size:12px;color:var(--fw-gray);">Colombia · Centroamérica</span>
       </div>
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,165,0,.12);border:1px solid rgba(255,165,0,.35);border-radius:20px;padding:6px 16px;margin-bottom:24px;">
-        <span style="font-size:14px;">📅</span>
-        <span style="font-size:12px;font-weight:800;color:#B8660A;">Inicio Enero · 7 meses de facturación</span>
+
+      <!-- Ramp badges CARICAM -->
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;align-items:center;">
+        <div style="background:rgba(0,168,107,.1);border:1px solid rgba(0,168,107,.3);border-radius:20px;padding:7px 16px;display:flex;align-items:center;gap:8px;">
+          <span style="width:9px;height:9px;border-radius:50%;background:#00A86B;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:12px;font-weight:800;color:#007A4D;">AGOSTO · Ramp 1</span>
+          <span style="font-size:12px;color:var(--fw-gray);">30 usuarios · 12 meses</span>
+        </div>
+        <div style="background:rgba(200,0,107,.07);border:1px solid rgba(200,0,107,.22);border-radius:20px;padding:7px 16px;display:flex;align-items:center;gap:8px;">
+          <span style="width:9px;height:9px;border-radius:50%;background:#C8006B;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:12px;font-weight:800;color:#900050;">NOVIEMBRE · Ramp 2</span>
+          <span style="font-size:12px;color:var(--fw-gray);">+30 usuarios · 9 meses</span>
+        </div>
+        <div style="background:rgba(255,140,0,.1);border:1px solid rgba(255,140,0,.28);border-radius:20px;padding:7px 16px;display:flex;align-items:center;gap:8px;">
+          <span style="width:9px;height:9px;border-radius:50%;background:#FF8C00;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:12px;font-weight:800;color:#B86000;">ENERO · Ramp 3</span>
+          <span style="font-size:12px;color:var(--fw-gray);">+57 usuarios · 7 meses</span>
+        </div>
+      </div>
+
+      <div style="overflow-x:auto; margin-bottom:20px;">
+        <table style="border-collapse:collapse; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 2px 16px rgba(0,0,0,.07); min-width:860px; width:100%;">
+          <thead>
+            <tr>
+              <th rowspan="2" style="padding:10px 14px; text-align:left; background:var(--fw-navy); color:#fff; font-size:12px; font-weight:700; min-width:190px; border-right:1px solid rgba(255,255,255,.1);">Solución</th>
+              <th rowspan="2" style="padding:10px 8px; text-align:center; background:var(--fw-navy); color:#fff; font-size:11px; font-weight:700; border-right:2px solid rgba(255,255,255,.15);">Precio</th>
+              <th colspan="3" style="padding:8px 6px; text-align:center; background:#00A86B; color:#fff; font-size:12px; font-weight:800; letter-spacing:1px; border-right:2px solid rgba(255,255,255,.2);">AGOSTO</th>
+              <th colspan="3" style="padding:8px 6px; text-align:center; background:#C8006B; color:#fff; font-size:12px; font-weight:800; letter-spacing:1px; border-right:2px solid rgba(255,255,255,.2);">NOVIEMBRE</th>
+              <th colspan="3" style="padding:8px 6px; text-align:center; background:#FF8C00; color:#fff; font-size:12px; font-weight:800; letter-spacing:1px;">ENERO</th>
+            </tr>
+            <tr>
+              <th style="padding:7px 5px; text-align:center; background:rgba(0,168,107,.13); color:#007A4D; font-size:10px; font-weight:700;">Cant.</th>
+              <th style="padding:7px 5px; text-align:center; background:rgba(0,168,107,.13); color:#007A4D; font-size:10px; font-weight:700;">Meses</th>
+              <th style="padding:7px 5px; text-align:right; background:rgba(0,168,107,.13); color:#007A4D; font-size:10px; font-weight:700; border-right:2px solid #E1E8F0;">Total</th>
+              <th style="padding:7px 5px; text-align:center; background:rgba(200,0,107,.08); color:#900050; font-size:10px; font-weight:700;">Cant.</th>
+              <th style="padding:7px 5px; text-align:center; background:rgba(200,0,107,.08); color:#900050; font-size:10px; font-weight:700;">Meses</th>
+              <th style="padding:7px 5px; text-align:right; background:rgba(200,0,107,.08); color:#900050; font-size:10px; font-weight:700; border-right:2px solid #E1E8F0;">Total</th>
+              <th style="padding:7px 5px; text-align:center; background:rgba(255,140,0,.1); color:#B86000; font-size:10px; font-weight:700;">Cant.</th>
+              <th style="padding:7px 5px; text-align:center; background:rgba(255,140,0,.1); color:#B86000; font-size:10px; font-weight:700;">Meses</th>
+              <th style="padding:7px 5px; text-align:right; background:rgba(255,140,0,.1); color:#B86000; font-size:10px; font-weight:700;">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Sales &amp; Service Cloud - Enterprise Edition (Restricted use)</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$60.00</td>
+              <td style="padding:10px 5px; text-align:center;"><span style="background:rgba(0,168,107,.12);color:#007A4D;font-weight:700;font-size:11px;padding:2px 7px;border-radius:10px;">30</span></td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$21,600.00</td>
+              <td style="padding:10px 5px; text-align:center;"><span style="background:rgba(200,0,107,.1);color:#900050;font-weight:700;font-size:11px;padding:2px 7px;border-radius:10px;">30</span></td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$16,200.00</td>
+              <td style="padding:10px 5px; text-align:center;"><span style="background:rgba(255,140,0,.13);color:#B86000;font-weight:700;font-size:11px;padding:2px 7px;border-radius:10px;">57</span></td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">7</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue);">$23,940.00</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Marketing Cloud Engagement - Corporate Edition</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$1,150.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$13,800.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Additional Business Unit (+1)</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$75.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$900.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">SSL Certificate</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$13.20</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">8</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$1,267.20</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Sender Authentication Package</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$20.83</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">2</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$499.92</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">WhatsApp Business Messaging (1,000)</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$0.90</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12,400</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$11,160.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Intelligence Reports for Engagement Advanced</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$305.48</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$3,665.76</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Agentforce contact service</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$24.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">4</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$1,152.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">5</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$1,080.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">5</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">7</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue);">$840.00</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Salesforce Message Credits - WhatsApp (1,000)</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$10.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">$0.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">10</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue);">$100.00</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Premier Success Plan 15%</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$6,112.80</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$6,642.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">7</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue);">$6,867.00</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Customer Community - Members</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$3.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">500</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$18,000.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1,000</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$27,000.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">1,000</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">7</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue);">$21,000.00</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-gray);">Salesforce Foundations</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$0.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">122</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">12</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$0.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td><td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--fw-border);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Tableau Creator</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$60.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">5</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$2,700.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="border-bottom:2px solid var(--fw-border); background:var(--fw-light);">
+              <td style="padding:10px 14px; font-size:12px; font-weight:600; color:var(--fw-navy);">Tableau Viewer</td>
+              <td style="padding:10px 8px; text-align:center; font-size:12px; color:var(--fw-gray); border-right:2px solid var(--fw-border);">$10.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc; border-right:2px solid var(--fw-border);">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">10</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:var(--fw-gray);">9</td>
+              <td style="padding:10px 5px; text-align:right; font-size:12px; font-weight:700; color:var(--fw-blue); border-right:2px solid var(--fw-border);">$900.00</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:center; font-size:11px; color:#ccc;">—</td>
+              <td style="padding:10px 5px; text-align:right; font-size:11px; color:#ccc;">—</td>
+            </tr>
+            <tr style="background:var(--fw-navy);">
+              <td colspan="2" style="padding:13px 14px; text-align:right; color:rgba(255,255,255,.6); font-weight:700; font-size:12px; letter-spacing:.3px;">SUBTOTAL POR RAMP</td>
+              <td colspan="3" style="padding:13px 5px; text-align:center; background:#00A86B;">
+                <div style="font-size:15px;font-weight:900;color:#fff;">$78,157.68</div>
+                <div style="font-size:10px;color:rgba(255,255,255,.75);">Agosto</div>
+              </td>
+              <td colspan="3" style="padding:13px 5px; text-align:center; background:#C8006B;">
+                <div style="font-size:15px;font-weight:900;color:#fff;">$54,522.00</div>
+                <div style="font-size:10px;color:rgba(255,255,255,.75);">Noviembre</div>
+              </td>
+              <td colspan="3" style="padding:13px 5px; text-align:center; background:#FF8C00;">
+                <div style="font-size:15px;font-weight:900;color:#fff;">$52,747.00</div>
+                <div style="font-size:10px;color:rgba(255,255,255,.75);">Enero</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Grand total CARICAM -->
+      <div style="background:linear-gradient(135deg,var(--fw-navy),#0D2E6E);border-radius:16px;padding:20px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:40px;">
+        <div>
+          <div style="color:rgba(255,255,255,.6);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">TOTAL CARICAM · 3 rampas</div>
+          <div style="color:rgba(255,255,255,.5);font-size:12px;">$78,157.68 + $54,522.00 + $52,747.00</div>
+        </div>
+        <div style="text-align:right;">
+          <span style="font-size:30px;font-weight:900;color:var(--fw-cyan);">$185,426.68</span>
+          <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:2px;">USD · Año 1</div>
+        </div>
+      </div>
+
+      <!-- ══ ANDINA ══ -->
+      <div style="border-top:2px solid var(--fw-border);padding-top:36px;margin-bottom:20px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <div style="background:linear-gradient(135deg,#2C5282,#3B82F6);color:#fff;font-size:13px;font-weight:800;letter-spacing:1px;padding:8px 20px;border-radius:30px;">ANDINA</div>
+          <span style="font-size:12px;color:var(--fw-gray);">Inicio Enero · 142 usuarios · 7 meses</span>
+        </div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,165,0,.12);border:1px solid rgba(255,165,0,.35);border-radius:20px;padding:6px 16px;margin-bottom:20px;">
+          <span style="font-size:14px;">📅</span>
+          <span style="font-size:12px;font-weight:800;color:#B8660A;">Inicio Enero · 7 meses de facturación</span>
+        </div>
       </div>
 
       <div style="overflow-x:auto; margin-bottom:20px;">
@@ -1728,28 +1979,28 @@
             <tr style="border-bottom:1px solid var(--fw-border);">
               <td style="padding:13px 18px; font-size:13px; font-weight:600; color:var(--fw-navy);">Sales &amp; Service Cloud - Enterprise Edition (Restricted use)</td>
               <td style="padding:13px 12px; text-align:center; font-size:13px; color:var(--fw-gray);">$60.00</td>
-              <td style="padding:13px 8px; text-align:center;"><span style="background:rgba(255,140,0,.13);color:#B86000;font-weight:700;font-size:12px;padding:3px 9px;border-radius:10px;">117</span></td>
+              <td style="padding:13px 8px; text-align:center;"><span style="background:rgba(255,140,0,.13);color:#B86000;font-weight:700;font-size:12px;padding:3px 9px;border-radius:10px;">142</span></td>
               <td style="padding:13px 8px; text-align:center; font-size:13px; font-weight:700; color:#B8660A;">7</td>
-              <td style="padding:13px 14px; text-align:right; font-size:14px; font-weight:800; color:var(--fw-blue);">$49,140.00</td>
+              <td style="padding:13px 14px; text-align:right; font-size:14px; font-weight:800; color:var(--fw-blue);">$59,640.00</td>
             </tr>
             <tr style="border-bottom:1px solid var(--fw-border); background:var(--fw-light);">
               <td style="padding:13px 18px; font-size:13px; font-weight:600; color:var(--fw-navy);">Premier Success Plan 15%</td>
               <td style="padding:13px 12px; text-align:center; font-size:13px; color:var(--fw-gray);">—</td>
               <td style="padding:13px 8px; text-align:center; font-size:13px; color:var(--fw-gray);">1</td>
               <td style="padding:13px 8px; text-align:center; font-size:13px; font-weight:700; color:#B8660A;">7</td>
-              <td style="padding:13px 14px; text-align:right; font-size:14px; font-weight:800; color:var(--fw-blue);">$7,371.00</td>
+              <td style="padding:13px 14px; text-align:right; font-size:14px; font-weight:800; color:var(--fw-blue);">$8,946.00</td>
             </tr>
             <tr style="border-bottom:2px solid var(--fw-border);">
               <td style="padding:13px 18px; font-size:13px; font-weight:600; color:var(--fw-gray);">Salesforce Foundations</td>
               <td style="padding:13px 12px; text-align:center; font-size:13px; color:var(--fw-gray);">$0.00</td>
-              <td style="padding:13px 8px; text-align:center; font-size:13px; color:var(--fw-gray);">117</td>
+              <td style="padding:13px 8px; text-align:center; font-size:13px; color:var(--fw-gray);">142</td>
               <td style="padding:13px 8px; text-align:center; font-size:13px; font-weight:700; color:#B8660A;">7</td>
               <td style="padding:13px 14px; text-align:right; font-size:14px; font-weight:700; color:var(--fw-gray);">$0.00</td>
             </tr>
             <tr style="background:var(--fw-navy);">
-              <td colspan="4" style="padding:16px 18px; text-align:right; color:#fff; font-weight:800; font-size:14px; letter-spacing:.5px;">TOTAL CARICAM</td>
+              <td colspan="4" style="padding:16px 18px; text-align:right; color:#fff; font-weight:800; font-size:14px; letter-spacing:.5px;">TOTAL ANDINA</td>
               <td style="padding:16px 14px; text-align:right; background:var(--fw-cyan); color:var(--fw-navy);">
-                <div style="font-size:20px; font-weight:900;">$56,511.00</div>
+                <div style="font-size:20px; font-weight:900;">$68,586.00</div>
                 <div style="font-size:11px; font-weight:600; opacity:.7;">USD · Enero (7 meses)</div>
               </td>
             </tr>
@@ -1759,9 +2010,10 @@
 
       <div style="background:rgba(0,87,184,.06);border:1px solid rgba(0,87,184,.15);border-radius:12px;padding:14px 20px;margin-bottom:8px;display:flex;align-items:center;gap:12px;">
         <span style="font-size:13px;color:var(--fw-gray);">📊</span>
-        <span style="font-size:13px;color:var(--fw-gray);">Activación 12 meses completos (referencia): <strong style="color:var(--fw-navy);">$96,876.00 USD</strong></span>
+        <span style="font-size:13px;color:var(--fw-gray);">Activación 12 meses completos ANDINA (referencia): <strong style="color:var(--fw-navy);">$117,576.00 USD</strong></span>
       </div>
 
+    </div>
     </div>
 
 
